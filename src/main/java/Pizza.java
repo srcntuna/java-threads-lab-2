@@ -17,6 +17,7 @@ public class Pizza {
 
       for (Thread step : cookingSteps) {
           step.start();
+          step.join();
       }
   }
 
